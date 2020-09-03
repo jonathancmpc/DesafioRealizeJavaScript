@@ -1,0 +1,131 @@
+body {
+  background-color: #cccccc;
+  overflow: hidden;  
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.danger {
+  height: 2rem;
+  color: rgb(163, 47, 47);
+  background-color: rgb(204, 140, 140);
+  padding: 1rem;
+  border-radius: 5px 0 0 5px;
+  transform: translateX(250px);
+  animation: arise 3s linear alternate;
+  
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.invisible {
+  display: none;
+}
+
+.panel {
+  border: 3px solid #FFF;
+  border-radius: 10px;
+  background: #6d9eeb;
+  width: 50%;
+  height: 20rem;
+  margin-bottom: 3rem;
+  
+  position: relative;
+  display: flex;
+}
+
+  #columns {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+    .column {
+      width: 100%;
+      border: 2px solid #FFF;
+    }
+
+  #rows {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+    .row {
+      height: 100%;
+      border: 2px solid #FFF;
+    }
+
+.edit-fields {
+  width: 100%;
+}
+
+.form-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+  .form-principal div {
+    margin-bottom: 2rem;
+    
+    display: flex;
+    align-items: center;
+  }
+
+    .form-principal div label {
+      margin: 0 1rem 0 1.5rem;
+      color: #202020;
+    }
+
+    .form-principal div input {
+      color: #202020;
+      border: 3px solid rgb(180, 179, 179);
+      border-radius: 2px;
+    }
+      .form-principal div input:hover {
+        border-color: #6d9eeb;
+      }
+    
+    .form-principal .error {
+      border-color:rgb(163, 47, 47);
+    }
+  
+  .form-principal .send-button {
+    width: 5.5rem;
+    height: 2rem;
+    text-align: center;
+  }
+
+@keyframes arise {
+  0% {
+    transform: translateX(220px);
+  }
+  10% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  90% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(220px);
+  }
+}
