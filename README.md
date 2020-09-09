@@ -1,7 +1,7 @@
-# Teste Realize
+# Desafio Realize
 
 ### O QUE É
-Destinado ao processo seletivo da empresa Realize
+Um desafio para testar os conhecimentos em javascript
 
 ### INSTALAÇÃO LOCAL
 • Somente é necessário um navegador atualizado para a execução do projeto
